@@ -1,4 +1,18 @@
 
+class Player
+
+    attr_accessor :name
+
+    def initialize(name)
+        @name = name
+    end
+
+    def show_name
+        puts name
+    end
+
+    
+end
 # List of colors to choose from. 
 colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet']
 
