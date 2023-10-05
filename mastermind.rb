@@ -19,8 +19,9 @@ def mastermind(colors)
 
 
 
-        array.each_index do |color|
-            if guess == array[color]
+        array.each_index do |index|
+            if guess[index] == array[index]
+                puts "Hello"
             end
         end
 
@@ -44,7 +45,7 @@ def mastermind(colors)
         fourth_color = gets.chomp
         guess_array.push(fourth_color)
 
-        print guess_array
+        checkColor(random_array, guess_array)
         tries += 10
         puts tries
     end  
